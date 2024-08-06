@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #022b02ab;
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+}
+.Box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    background-color: #9fbc8f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+.board-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 275px;
+}
+.square{
+    height: 80%;
+    width: 30%;
+    background-color:  #ffffffbe;
+    padding: 0;
+    margin: 3px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 5em;
+}
+.square:hover{
+    box-shadow: 0 0 2px grey;
+    transition: .8s;
+}
+.status{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin: 15% 0%;
+}
+.listMove{
+    list-style-type: none;
+}
+.buttonList{
+    background-color: #0e300eb7;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    margin: 2px;
+    transition: .8s;
+}
+.buttonList:hover{
+    background-color: #000a00ab;
+    transition: .8s;
+}
+li::marker{
+    color: #022b02;
+}
+
+/*---------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');

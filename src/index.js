@@ -1,15 +1,14 @@
-import React  from "react"
-import ReactDom from 'react-dom'
-import '.index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
-class App extends React.Component{
-    render(){
-        return(
-            <div className="App">
-                <h1>Hello World!</h1>
-            </div>
-        )
-    }
-}
+import App from './App';
 
-ReactDom.render(<App/>, Document.getElementById('root'))
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
